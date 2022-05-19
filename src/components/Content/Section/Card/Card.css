@@ -1,0 +1,19 @@
+.card{
+    width: 80%;
+    min-width: 200px;
+    max-width: 400px;
+    border-radius: 10px 10px 10px 10px;
+    background: #CA1818;
+    margin-left:1rem;
+    
+}
+
+.card > img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.card > p{
+    text-align: center;
+    color:white;
+    font-size: 1.5rem;
+}

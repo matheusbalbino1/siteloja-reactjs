@@ -1,0 +1,15 @@
+.footer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background:#CA1818;
+    height:50px;
+}
+.footer > a{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color:white;
+    letter-spacing: .2rem;
+}

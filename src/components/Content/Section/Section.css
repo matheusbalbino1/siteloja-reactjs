@@ -1,0 +1,12 @@
+.content{
+    padding: 1rem;
+}
+.content > article{
+    display:flex;
+    overflow-x: scroll;
+    
+}
+.content > h2{
+    color:#CA1818;
+
+}

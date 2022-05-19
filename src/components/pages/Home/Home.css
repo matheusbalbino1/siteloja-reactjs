@@ -1,0 +1,14 @@
+.divLoadIcon{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    color:#CA1818;
+    padding-top: 2rem;
+}
+.loadIcon{
+    margin:auto;
+    height:200px;
+    width:200px;
+}

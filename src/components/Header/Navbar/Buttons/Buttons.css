@@ -1,0 +1,12 @@
+.buttonsMenu{
+    color:white;
+    background:#CA1818;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding:.5rem .5rem .5rem 0;
+    border-bottom:2px solid white;
+    width:100%;
+    height:36px;
+    text-align: end;
+}

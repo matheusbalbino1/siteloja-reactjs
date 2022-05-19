@@ -1,0 +1,19 @@
+
+
+.header{
+    background-image: url("./imgs/background-header.svg");
+    display:flex;
+    align-items: center;
+    background-size: contain;
+    height:50px;
+    background-repeat: no-repeat;
+}
+.header h1{
+    color: #CA1818;
+    font-size: 1.2rem;
+    justify-self: end;
+    font-family: "Rakkas";
+    text-align: center;
+    width:100%;
+}
+
