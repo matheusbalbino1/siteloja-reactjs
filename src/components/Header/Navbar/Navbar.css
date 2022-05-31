@@ -8,7 +8,7 @@
     width:50px;
     height:50px;
     transition: 1s;
-    
+
 }
 
 .header .open { 
@@ -30,5 +30,15 @@
     background:white;
     border:1px solid black;
     transition: 1s;
+}
+
+@media(min-width:900px){
+    .header .navbar-mobile{
+        width:100%;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #CA1818;
+    }
 }
 

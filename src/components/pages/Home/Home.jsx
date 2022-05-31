@@ -3,49 +3,56 @@ import Section from "../../Content/Section/Section"
 import {AiOutlineReload} from "react-icons/ai"
 import "./Home.css"
 
-function Home() {
+function Home({veiculos}) {
 
     // API DO SITE PEXELS
+    const [todosVeiculos,setTodosVeiculos] = useState(false)
+    // const [veiculos2022, setVeiculos2022] = useState([])
 
-    const [photos, setphotos] = useState(false)
 
-    useEffect(() => {
-        function getImage() {
+    // function checarAno(veiculoAno, ano){
+    //     return veiculoAno.ano === ano
+    // }
 
-            fetch(`https://api.pexels.com/v1/search?query=car}`, {
-                method: "GET",
-                headers: {
-                    "Accept": "application/json",
-                    "Authorization": "563492ad6f91700001000001551f4ffdd6e34e50b22843792636fffa"
-                }
-            })
-                .then(resposta => resposta.json())
-                .then(data => setphotos(data.photos))
-                .then(console.log(photos))
+    useEffect(()=>{
+
+        if (veiculos !== false){
+            setTodosVeiculos([...veiculos.carros, ...veiculos.motos] || "DEFAULT")
         }
 
-        getImage()
+    },[veiculos])
 
-    }, [])
+    // useEffect(()=>{
 
+    //     if(todosVeiculos !== false){
+    //         setVeiculos2022(todosVeiculos.filter((parametro)=>{return checarAno(parametro,2022)}))
+    //     }
+        
+    // },[todosVeiculos])
+    
+
+   
+
+    function refreshPage(){ 
+        window.location.reload(); 
+    }
     
 
     return (
-        <main>
+        <main className="home">
 
-            {photos ?
+            {todosVeiculos ?
             <>
-            <Section data={photos} name="Ofertas"/>
-
-            <Section data={photos} name="Veículos 2022"/>
-            <Section data={photos} name="Veículos 2021"/>
-            <Section data={photos} name="Veículos 2020"/>
-            <Section data={photos} name="Veículos 2019"/>
+            <Section todosVeiculos={todosVeiculos} ano={2022} name="Veículos 2022"/>
+            <Section todosVeiculos={todosVeiculos} ano={2021} name="Veículos 2021"/>
+            <Section todosVeiculos={todosVeiculos} modelo={"carro"} name="Carros"/>
+            <Section todosVeiculos={todosVeiculos} modelo={"moto"} name="Motos"/>
+        
             </>
 
             : // SE PHOTOS NÃO TIVER CARREGADA
             <div className="divLoadIcon">
-            <AiOutlineReload className="loadIcon"/>
+            <AiOutlineReload className="loadIcon" onClick={refreshPage}/>
             <h2>Recarregue a página</h2>
             </div>
             }

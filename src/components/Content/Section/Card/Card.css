@@ -1,19 +1,41 @@
 .card{
-    width: 80%;
-    min-width: 200px;
-    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 320px;
+    max-width: 320px;
     border-radius: 10px 10px 10px 10px;
     background: #CA1818;
     margin-left:1rem;
+    height:215px;
     
 }
 
 .card > img {
     width: 100%;
     border-radius: 10px 10px 0 0;
+    background:#555555;
+    height: 100%;
+    max-height: 180px;
+    min-height: 180px;
+    
 }
 .card > p{
     text-align: center;
     color:white;
     font-size: 1.5rem;
+    height:35px;
+    border-radius: 0 0 10px 10px;
+}
+
+@media(max-width:500px){
+    .card{
+        min-width: 210px;
+        max-width: 210px;
+        height:153px;
+    }
+    .card > img{
+        min-height: 118px;
+        max-height: 118px;
+    }
 }

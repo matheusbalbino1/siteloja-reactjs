@@ -1,52 +1,40 @@
 import { useState, useEffect } from "react"
 import Section from "../../Content/Section/Section"
 import {AiOutlineReload} from "react-icons/ai"
+import React from "react"
 
-
-function Todos() {
+function Todos({veiculos}) {
 
     // API DO SITE PEXELS
 
-    const [photos, setphotos] = useState(false)
+    let carros = veiculos["carros"]
+    console.log(carros)
+    
+    function refreshPage(){ 
+        window.location.reload(); 
+    }
 
-    useEffect(() => {
-        function getImage() {
-
-            fetch(`https://api.pexels.com/v1/search?query=car}`, {
-                method: "GET",
-                headers: {
-                    "Accept": "application/json",
-                    "Authorization": "563492ad6f91700001000001551f4ffdd6e34e50b22843792636fffa"
-                }
-            })
-                .then(resposta => resposta.json())
-                .then(data => setphotos(data.photos))
-                .then(console.log(photos))
-        }
-
-        getImage()
-
-    }, [])
+    
 
     
 
     return (
         <main>
 
-            {photos ?
+            {veiculos ?
             <>
-            <Section data={photos} name="Carros / 2022"/>
+            <Section data={veiculos} name="Carros / 2022"/>
 
-            <Section data={photos} name="Carros / 2021"/>
-            <Section data={photos} name="Carros abaixo de 2021"/>
-            <Section data={photos} name="Motos / 2022"/>
-            <Section data={photos} name="Motos / 2021"/>
-            <Section data={photos} name="Motos abaixo de 2021"/>
+            <Section data={veiculos} name="Carros / 2021"/>
+            <Section data={veiculos} name="Carros abaixo de 2021"/>
+            <Section data={veiculos} name="Motos / 2022"/>
+            <Section data={veiculos} name="Motos / 2021"/>
+            <Section data={veiculos} name="Motos abaixo de 2021"/>
             </>
 
             : // SE PHOTOS NÃO TIVER CARREGADA
             <div className="divLoadIcon">
-            <AiOutlineReload className="loadIcon"/>
+            <AiOutlineReload className="loadIcon" onClick={refreshPage}/>
             <h2>Recarregue a página</h2>
             </div>
             }

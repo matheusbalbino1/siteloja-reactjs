@@ -4,9 +4,15 @@
 .content > article{
     display:flex;
     overflow-x: scroll;
-    
+    min-height:250px;
 }
 .content > h2{
     color:#CA1818;
 
+}
+
+@media(max-width:500px){
+    .content > article{
+        min-height:163px;
+    }
 }

@@ -7,6 +7,15 @@
     padding:.5rem .5rem .5rem 0;
     border-bottom:2px solid white;
     width:100%;
-    height:36px;
+    height:50px;
     text-align: end;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+@media(min-width:900px){
+    .buttonsMenu{
+        width:150px;
+        border:none;
+    }
 }

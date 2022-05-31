@@ -4,9 +4,10 @@
     background-image: url("./imgs/background-header.svg");
     display:flex;
     align-items: center;
-    background-size: contain;
+    flex-direction: row-reverse;
+    background-size: cover;
     height:50px;
-    background-repeat: no-repeat;
+    width:100%;
 }
 .header h1{
     color: #CA1818;
@@ -15,5 +16,16 @@
     font-family: "Rakkas";
     text-align: center;
     width:100%;
+}
+@media(min-width:900px){
+    .header {
+        flex-wrap: wrap;
+        height: 100px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .header h1{
+        margin-top:15px;
+    }
 }
 
