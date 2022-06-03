@@ -1,0 +1,104 @@
+.mainAdmin{
+    min-height:85vh;
+}
+
+
+.divFiltros{
+    border-top:1px solid white;
+    background:#CA1818;
+    display:flex;
+    height:35px;
+    box-sizing: content-box;
+    padding: 5px;
+    text-transform: uppercase;
+    color:white;
+    letter-spacing: 3px;
+}
+.divButton{
+    height:35px;
+}
+.divButton button{
+    height:35px;
+    width:90px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color:#CA1818;
+}
+.divInputs{
+    display:flex;
+    align-items: center;
+}
+.divInputs label{
+    margin-left:25px;
+}
+.divInputs label input{
+    margin-right:10px;
+}
+.divInputs label select{
+    margin-left:10px;
+    color:#CA1818;
+    letter-spacing: 3px;
+    height:35px;
+    width:90px;
+    font-size: 1.2em;
+}
+.divAdicionar{
+    padding:5px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.divAdicionar button{
+    height:35px;
+    width:135px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color:#CA1818;
+    box-sizing: content-box;
+    padding: 5px;
+}
+
+
+
+@media(max-width:750px){
+    .divFiltros{
+        height:90px;
+        overflow-y: scroll;
+    }
+    .divButton{
+        height:90px;
+    }
+    .divButton button{
+        height:80px;
+    }
+    .divInputs{
+        flex-wrap: wrap;
+     
+    }
+} 
+
+@media(max-width:500px){
+    .divFiltros{
+        height:90px;
+        overflow-y: scroll;
+    }
+    .divButton{
+        height:90px;
+    }
+    .divButton button{
+        height:80px;
+    }
+    .divInputs{
+        flex-wrap: wrap;
+     
+    }
+    .divAdicionar button{
+        height:35px;
+        width:100%;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color:#CA1818;
+        box-sizing: content-box;
+        padding: 5px;
+    }
+    
+} 

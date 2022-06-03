@@ -5,31 +5,17 @@ import "./Home.css"
 
 function Home({veiculos}) {
 
-    // API DO SITE PEXELS
     const [todosVeiculos,setTodosVeiculos] = useState(false)
-    // const [veiculos2022, setVeiculos2022] = useState([])
-
-
-    // function checarAno(veiculoAno, ano){
-    //     return veiculoAno.ano === ano
-    // }
 
     useEffect(()=>{
 
         if (veiculos !== false){
-            setTodosVeiculos([...veiculos.carros, ...veiculos.motos] || "DEFAULT")
+            setTodosVeiculos([...veiculos.carro, ...veiculos.moto] || "DEFAULT")
         }
 
     },[veiculos])
 
-    // useEffect(()=>{
-
-    //     if(todosVeiculos !== false){
-    //         setVeiculos2022(todosVeiculos.filter((parametro)=>{return checarAno(parametro,2022)}))
-    //     }
-        
-    // },[todosVeiculos])
-    
+ 
 
    
 

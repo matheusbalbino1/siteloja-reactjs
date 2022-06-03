@@ -1,0 +1,88 @@
+{
+  "veiculos": {
+    "carro": [
+      {
+        "id": 2,
+        "nome": "FOX MONSTRO",
+        "imagem": "https://www.chevrolet.com.br/content/dam/chevrolet/mercosur/brazil/portuguese/index/cars/2022-onix-plus/optimizaci%C3%B3n-/mov/colorizer-onix%20plus-premier-azul.jpg?imwidth=960",
+        "ano": 2012,
+        "marca": "chevro",
+        "preco": 50000,
+        "modelo": "carro",
+        "alt": "teste"
+      },
+      {
+        "id": 3,
+        "nome": "T-Cross",
+        "imagem": "https://assets.volkswagen.com/is/image/volkswagenag/35_1220_TAOS_21_HIGHLINE_250TSI_ATLANTIC_CLOSE_GRADE_FRONTAL_FAROL__AMB_DIA_BRA.0001.preview%20(1)?Zml0PWNyb3AsMSZmbXQ9d2VicCZxbHQ9Nzkmd2lkPTY4MCZoZWk9NDA4JmFsaWduPTAuMDAsMC4wMCZiZmM9b2ZmJjM1NzY=",
+        "ano": 2021,
+        "marca": "volkswagen",
+        "preco": 60000,
+        "modelo": "carro",
+        "alt": "Imagem do carro T-Cross da marca volkswagen"
+      },
+      {
+        "id": 4,
+        "nome": "Corolla",
+        "imagem": "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2022/202204/20220422/toyota-corolla-2.0-vvtie-flex-altis-direct-shift-wmimagem1719543900.jpg?s=fill&w=552&h=414&q=60",
+        "ano": 2021,
+        "marca": "toyota",
+        "preco": 150000,
+        "modelo": "carro",
+        "alt": "Imagem do carro Corolla da marca toyota"
+      },
+      {
+        "id": 5,
+        "nome": "Hb20",
+        "imagem": "https://www.automaistv.com.br/wp-content/uploads/2020/09/HB20-2-990x595.jpg",
+        "ano": 2020,
+        "marca": "hyundai",
+        "preco": 30000,
+        "modelo": "carro",
+        "alt": "Imagem do carro Hb20 da marca hyundai"
+      },
+      {
+        "id": 11,
+        "nome": "Ferrari J50",
+        "imagem": "https://classic.exame.com/wp-content/uploads/2016/12/ferrari-j50.jpg?quality=70&strip=info&w=680",
+        "ano": 2021,
+        "marca": "Ferrari",
+        "preco": 1000000,
+        "modelo": "carro",
+        "alt": "teste"
+      }
+    ],
+    "moto": [
+      {
+        "id": 6,
+        "nome": "Lander 250",
+        "imagem": "https://www.otempo.com.br/image/contentid/policy:1.2255487:1572370998/image.jpg?f=3x2&q=0.6&w=1200&$p$f$q$w=4633e5f",
+        "ano": 2021,
+        "marca": "Yamaha",
+        "preco": 20000,
+        "modelo": "moto",
+        "alt": "teste"
+      },
+      {
+        "id": 7,
+        "nome": "XRE 300",
+        "imagem": "https://img.olx.com.br/images/40/404103344079899.jpg",
+        "ano": 2022,
+        "marca": "honda",
+        "preco": 32000,
+        "modelo": "moto",
+        "alt": "teste"
+      },
+      {
+        "id": 10,
+        "nome": "Fazer 250",
+        "imagem": "https://cdn.motor1.com/images/mgl/GEEmV/s4/nova-yamaha-fazer-250-2018.webp",
+        "ano": 2019,
+        "marca": "yamaha",
+        "preco": 23000,
+        "modelo": "moto",
+        "alt": "Imagem da moto Faze 250 da marca Yamaha"
+      }
+    ]
+  }
+}

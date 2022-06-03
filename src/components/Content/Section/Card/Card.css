@@ -4,10 +4,10 @@
     justify-content: space-between;
     min-width: 320px;
     max-width: 320px;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 0 0;
     background: #CA1818;
     margin-left:1rem;
-    height:215px;
+    height:250px;
     
 }
 
@@ -25,14 +25,46 @@
     color:white;
     font-size: 1.5rem;
     height:35px;
-    border-radius: 0 0 10px 10px;
 }
 
+.divButtons{
+    background-color: #CA1818;
+    border-radius: 0 0 10px 10px;
+    width:100%;
+    display:flex;
+}
+.buttonRemove, .buttonEdit{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:50%;
+    font-size: 1.3em;
+    height:35px;
+}
+
+.divInput{
+    background-color: #c4c4c4;
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:5px;
+    overflow-y: scroll;
+  
+}
+.input{
+    width:100%;
+    height:35px;
+    border-left: none;
+    border-right: none;
+    padding-left: 5px;
+}
 @media(max-width:500px){
     .card{
         min-width: 210px;
         max-width: 210px;
-        height:153px;
+        height:230px;
     }
     .card > img{
         min-height: 118px;

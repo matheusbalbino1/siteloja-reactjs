@@ -4,19 +4,16 @@ import Buttons from "./Buttons/Buttons.jsx"
 import { useState, useEffect } from "react"
 import "./Navbar.css"
 
-
 function Navbar(props) {
 
     const [showMenu, setshowMenu] = useState(false)
 
     const [largura, setLargura] = useState(window.screen.width)
 
-
     useEffect(()=>{
         setLargura(window.screen.width)
     },[window.screen.width])
 
-    console.log(largura)
     function changeMenu(componente) {
         componente.classList.toggle("open")
 
@@ -28,11 +25,8 @@ function Navbar(props) {
     }
 
     return (
-        <nav
-            className="navbar-mobile"
-        >   
+        <nav className="navbar-mobile">   
 
-            
             {showMenu == true || largura >= 900 ? <>
             {props.pages.map(parametro => <Buttons name={parametro} key={parametro} />)}
             {largura < 900 ? <MdTransitEnterexit
@@ -43,10 +37,6 @@ function Navbar(props) {
             :
             <BsList className="bslistIcon" onClick={() => changeMenu(document.getElementsByClassName("navbar-mobile")[0])} />
             }
-
-            {// SE CLICAR NO BOTÃO PARA ABRIR O MENU, VAI DAR "TRUE"
-            }
-
 
         </nav>
     )

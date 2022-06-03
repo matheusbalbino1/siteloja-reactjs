@@ -1,0 +1,27 @@
+.formAdd{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: content-box;
+    padding:5px;
+}
+.formAdd label, .formAdd input, .formAdd select{
+    color:#CA1818;
+    height:35px;
+    margin-bottom: 30px;
+}
+.esconder{
+    display:none;
+}
+#buttonSubmit{
+    height:35px;
+    color:#CA1818;
+}
+@media(max-width:500px){
+    .formAdd input{
+        width:100%;
+    }
+    #buttonSubmit{
+        width:100%;
+    }
+}
