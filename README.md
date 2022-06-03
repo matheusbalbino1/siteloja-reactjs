@@ -6,7 +6,8 @@
 
 ## Foi utilizado HTML, CSS, JAVASCRIPT, REACTJS e JSON-SERVER como banco de dados
 
-## Para utilizar é necessário ter o Node Instalado que pode ser instalado pelo link: https://nodejs.org/en/download/
+# COMO UTILIZAR
+## É necessário ter o Node Instalado que pode ser instalado pelo link: https://nodejs.org/en/download/
 ## Apos clonar o projeto, no terminal utilize o comando "npm install" para baixar as depêndencias
 ## Utilize "npm start" para inciiar o site
 ## E em um novo terminal utilize "npm bd" para abrir o JSON-SERVER
