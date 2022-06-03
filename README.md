@@ -7,10 +7,11 @@
 ## Foi utilizado HTML, CSS, JAVASCRIPT, REACTJS e JSON-SERVER como banco de dados
 
 # 😎COMO UTILIZAR
-## É necessário ter o Node Instalado que pode ser instalado pelo link: https://nodejs.org/en/download/
+## É necessário ter o Node que pode ser instalado em: https://nodejs.org/en/download/
+
 ## Apos clonar o projeto, no terminal utilize o comando "npm install" para baixar as depêndencias
-## Utilize "npm start" para inciiar o site
-## E em um novo terminal utilize "npm bd" para abrir o JSON-SERVER
+## Utilize "npm start" para iniciar o site
+## E em um novo terminal utilize "json-server --watch db.json --port 4000" o JSON-SERVER irá abrir na porta 4000 podendo ser alterada
 ## Está pronto para uso
 
 ![Screenshot_6](https://user-images.githubusercontent.com/96322427/171960315-20709f33-20fa-4b4f-b09b-2b3b8b38fb16.png)
