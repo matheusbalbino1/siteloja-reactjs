@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/siteloja-reactjs/static/css/main.896c729f.css",
+    "main.js": "/siteloja-reactjs/static/js/main.c611f08d.js",
+    "static/media/background-header.svg": "/siteloja-reactjs/static/media/background-header.1e5993ad93e1b662f92f.svg",
+    "index.html": "/siteloja-reactjs/index.html",
+    "main.896c729f.css.map": "/siteloja-reactjs/static/css/main.896c729f.css.map",
+    "main.c611f08d.js.map": "/siteloja-reactjs/static/js/main.c611f08d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.896c729f.css",
+    "static/js/main.c611f08d.js"
+  ]
+}
